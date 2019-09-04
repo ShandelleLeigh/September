@@ -3,30 +3,29 @@ import './styles.css';
 
 const styles = {
   textContainer : {
-    paddingLeft: 'calc(30vw - 75px)',
-    marginTop: '25vh',
     float: 'left',
-    height: '100%',
+    paddingLeft: 'calc(25vw - 75px)',
+    paddingTop: '30vh',
+    height: '70vh', // Has to account for padding top
     width: '100%',
+    float: 'top',
   },
   container: {
-    // float: 'left',
-    height: '100%',
-    // width: 'calc(100vw )',
-    width: 'calc(100vw - 76px)',
-    // width: '100%',
-    marginLeft: '76px',
+    height: '100vh',
+    gridRow: '1/ span 1',
+  },
+  container: {
+    ':after': {
+      float: 'none',
+    },
   },
   polygon: {
     float: 'right',
-    height: '90vh',
-    // width: 'calc(100vw - 76px)',
+    height: '100vh',
     width: 'calc(100%)',
     backgroundColor: 'pink',
-    // marginTop: '10vh',
-    // marginLeft: '76px',
-    clipPath: 'polygon(100% 0, 100% 100%, 0 100%)',
-    shapeOutside: 'polygon(100% 0, 100% 100%, 0 100%)',
+    clipPath: 'polygon(95% 0px, 100% 0px, 100% 100%, 0px 100%, 0px 96%)',
+    shapeOutside: 'polygon(0 96%, 0 100%, 100% 100%, 100% 0, 95% 0, 0 97%)',
     boxShadow: '-1px -2px 4px -1px rgba(0,0,0,0.3), -1px -4px 5px 0px rgba(0,0,0,0.2), -1px -1px 10px 0px rgba(0,0,0,0.2)',
   },
 }

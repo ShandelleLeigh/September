@@ -3,23 +3,36 @@ import './App.css';
 import Intro from './Pages/Intro'
 import Socials from './Pages/socials'
 import Skills from './Pages/Skills';
+import Education from './Pages/Education';
+import Resume from './Pages/Resume';
+import Contact from './Pages/Contact';
 
 
 const styles = {
   spacer: {
     // marginLeft: '75px',
+    // width: '100%',
+    gridColumn: '2 / -1 ',
+  },
+  app: {
+    display: 'grid',
+    gridTemplateColumns: '75px auto',
+
   },
 }
 
 
 function App() {
   return (
-    <span className="App">
+    <span className="App" style={styles.app}>
       <Socials/>
-      <span className="Pages" style={styles.spacer} >
-        {/* <Intro className="Intro"/> */}
+      <div className="Pages" style={styles.spacer} >
+        <Intro className="Intro"/>
         <Skills className="Skills"/>
-      </span>
+        <Education/>
+        <Resume/>
+        <Contact/>
+      </div>
     </span>
   );
 }
