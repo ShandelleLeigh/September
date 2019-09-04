@@ -1,11 +1,12 @@
-import React from 'react';
-// import './styles.css';
+import React, {Fragment} from 'react';
+import './styles.css';
+import SectionHeader from '../components/SectionHeader';
 
 const styles = {
   skillsPage: {
       // display: 'grid',
       // gridTemplateColumns: 'col col col'
-
+      width: '100%',
   },
   treColumn: {
     // gridArea: 'col'
@@ -14,7 +15,8 @@ const styles = {
 
 const Skills = () => {
   return (
-    <div style={styles.skillsPage}>
+    <Fragment style={styles.skillsPage}>
+      < SectionHeader headerText={'Skills'} color={'pink'} />
         <div style={styles.treColumn}>
           <h2>Languages</h2>
           <div>JavaScript</div>
@@ -39,7 +41,7 @@ const Skills = () => {
           <div>PostgreSQL</div>
           <div>Docker</div>
         </div>
-    </div>
+    </Fragment>
   )
 }
 

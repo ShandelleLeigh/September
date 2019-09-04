@@ -1,26 +1,26 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.css';
 import Intro from './Pages/Intro'
 import Socials from './Pages/socials'
 import Skills from './Pages/Skills';
 
 
+const styles = {
+  spacer: {
+    // marginLeft: '75px',
+  },
+}
+
+
 function App() {
   return (
-    <div className="App">
+    <span className="App">
       <Socials/>
-      <div className="Pages" >
-      {/* Word */}
-        <Intro className="Intro"/>
-        {/* <div className="first">
-          1
-        </div>
-        <div className="snd">
-          2
-        </div> */}
+      <span className="Pages" style={styles.spacer} >
+        {/* <Intro className="Intro"/> */}
         <Skills className="Skills"/>
-      </div>
-    </div>
+      </span>
+    </span>
   );
 }
 

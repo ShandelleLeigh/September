@@ -1,16 +1,10 @@
-.Pages {
+/* .Pages {
   margin-left: 76px;
-
-  /* margin-top: -18px; */
-}
-
-h3 {
+  top: 0;
   margin-top: 0;
+  padding-top: 0;
+  margin-top: -18px;
 }
-/*
-h1::after {
-  clear: both;
-} */
 
 .socials {
   background-color: #4abef2;
@@ -35,6 +29,10 @@ h1::after {
   height: 50px;
 }
 
+.container {
+  justify-self: left;
+}
+
 /* .polygon::before {
   box-shadow: -1px -2px 4px -1px rgba(0,0,0,0.3), -1px -4px 5px 0px rgba(0,0,0,0.2), -1px -1px 10px 0px rgba(0,0,0,0.2);
 } */
@@ -42,7 +40,3 @@ h1::after {
 /* .polygon {
   box-shadow: -1px -2px 4px -1px rgba(0,0,0,0.3), -1px -4px 5px 0px rgba(0,0,0,0.2), -1px -1px 10px 0px rgba(0,0,0,0.2);
 } */
-
-.Skills {
-
-}
