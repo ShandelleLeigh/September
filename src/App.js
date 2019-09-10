@@ -7,26 +7,21 @@ import Education from './Pages/Education';
 import Resume from './Pages/Resume';
 import Contact from './Pages/Contact';
 
-
 const styles = {
-  spacer: {
-    // marginLeft: '75px',
-    // width: '100%',
+  pageContainer: {
     gridColumn: '2 / -1 ',
   },
   app: {
     display: 'grid',
     gridTemplateColumns: '75px auto',
-
   },
 }
-
 
 function App() {
   return (
     <span className="App" style={styles.app}>
       <Socials/>
-      <div className="Pages" style={styles.spacer} >
+      <div className="Pages" style={styles.pageContainer} >
         <Intro className="Intro"/>
         <Skills className="Skills"/>
         <Education/>
