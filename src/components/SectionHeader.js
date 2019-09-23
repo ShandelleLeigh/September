@@ -2,17 +2,15 @@ import React from 'react';
 
 const styles = {
   block: {
-    height: '5em',
+    height: 'fit-content',
     textAlign: 'center',
     float: 'left',
     width: '100%',
+    fontSize: '1.2em',
   },
   pink: {
     backgroundColor:  '#fe6b60',
   },
-  textStyle: {
-    verticalAlign: 'middle',
-  }
 }
 
 const SectionHeader = ({headerText, color}) => {
