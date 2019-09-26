@@ -1,14 +1,12 @@
 import React, {Fragment} from 'react';
-import './styles.css';
+// import './styles.css';
 
 const styles = {
   textContainer : {
-    float: 'left',
     paddingLeft: 'calc(25vw - 75px)',
     paddingTop: '30vh',
     height: '70vh', // Has to account for padding top
     width: '100%',
-    float: 'top',
   },
   container: {
     height: '100vh',

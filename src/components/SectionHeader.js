@@ -4,12 +4,18 @@ const styles = {
   block: {
     height: 'fit-content',
     textAlign: 'center',
-    float: 'left',
+    padding: '1px',
     width: '100%',
     fontSize: '1.2em',
   },
   pink: {
     backgroundColor:  '#fe6b60',
+  },
+  blue: {
+    backgroundColor: '#3849ad',
+  },
+  green: {
+    backgroundColor: '#82c03e',
   },
 }
 

@@ -1,15 +1,13 @@
 import React, {Fragment} from 'react';
-import './styles.css';
 import SectionHeader from '../components/SectionHeader';
+import list from '../data/skillsList';
 
 const styles = {
   colContainer:{
-    height: '100%',
     width: '100%',
     display: 'grid',
-    // grid: '12% 25% 25% 25% 12%',
     padding: '10% 0',
-    fontSize: '1.7em',
+    fontSize: '1.7em', //1.1em for small mobile devices?
     gridAutoFlow: 'column',
     justifyContent: 'space-evenly',
   },
@@ -20,30 +18,6 @@ const styles = {
     alignItems: 'space-evenly',
   },
 }
-
-const list = [
-  [
-    'JavaScript',
-    'TypeScript',
-    'Ruby',
-    'PHP',
-    'SQL',
-    'Unit Testing & Jest'
-  ],
-  [
-    'React.js',
-    'Material-UI',
-    'Materiailze-UI',
-    'Bootstrap',
-  ],
-  [
-    'Git',
-    'Github & Bitbucket',
-    'Agile/Scrum',
-    'PostgreSQL',
-    'Docker',
-  ],
-];
 
 const Skills = () => {
   return (
