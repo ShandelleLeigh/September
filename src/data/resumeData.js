@@ -64,15 +64,6 @@ const workHistory = [
     type: 'job',
   },
   {
-    company: 'Beehive Clothing Mills',
-    location: 'West Valley City, Ut',
-    roleTitle: 'Piece-rate Sewing',
-    dates: '11 months',
-    description: ['sewing', ],
-    relevancy: false,
-    type: 'job',
-  },
-  {
     company: 'BYU-Idaho',
     location: 'Rexburg, Idaho',
     degree: 'Bachelor of Arts',
