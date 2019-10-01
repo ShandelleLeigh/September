@@ -26,11 +26,11 @@ const Skills = () => {
       <div style={styles.colContainer}>
       {
         list.map(
-           column => (
-            <span style={styles.gridCol}>
+           (column, index) => (
+            <span style={styles.gridCol} key={'col'+index}>
               {
                 column.map(
-                  item => <div>{item}</div>
+                  (item, i) => <div key={'col'+index+'item'+i}>{item}</div>
                 )
               }
             </span>

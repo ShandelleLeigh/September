@@ -11,12 +11,11 @@ const styles = {
   container: {
     height: '100vh',
     gridRow: '1/ span 1',
-  },
-  container: {
     ':after': {
       float: 'none',
     },
   },
+
   polygon: {
     float: 'right',
     height: '100vh',

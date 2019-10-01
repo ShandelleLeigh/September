@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
 import Intro from './Pages/Intro'
 import Socials from './Pages/socials'

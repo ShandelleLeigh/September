@@ -15,8 +15,8 @@ const Resume = () => {
 
         {/* <div>{new Date().getFullYear()}</div> */}
           {
-            workHistory.map( item =>
-              <TimelineItem data={item}/>
+            workHistory.map( (item, index) =>
+              <TimelineItem data={item} key={'wh'+index}/>
             )
           }
       </div>
