@@ -20,6 +20,7 @@ const workHistory = [
     dates: 'February 2018 - April 2018',
     description: [
       'Full-Stack Web Development Certification through U of U Professional Education',
+
     ],
     relevancy: true,
     type: 'school',

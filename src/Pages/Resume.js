@@ -12,8 +12,6 @@ const Resume = () => {
       <SectionHeader headerText={'Recent Work History'} color={'pink'} />
       <div className='tContainer'>
         <div className='lineThing' />
-
-        {/* <div>{new Date().getFullYear()}</div> */}
           {
             workHistory.map( (item, index) =>
               <TimelineItem data={item} key={'wh'+index}/>

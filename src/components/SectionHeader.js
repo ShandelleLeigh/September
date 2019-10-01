@@ -7,6 +7,9 @@ const styles = {
     padding: '1px',
     width: '100%',
     fontSize: '1.2em',
+    boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.3), 0px 4px 5px 0px rgba(0,0,0,0.2), 0px 1px 10px 0px rgba(0,0,0,0.2)',
+  },
+  textStyle: {
   },
   pink: {
     backgroundColor:  '#fe6b60',

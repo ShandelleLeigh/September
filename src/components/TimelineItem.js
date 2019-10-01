@@ -25,18 +25,20 @@ const TimelineItem = ({data}) => {
     dates, degree, description, type,
   } = data
   return (
-    <div className={type === 'school' ? 'educationItem' : 'jobItem'} >
-      <p>{roleTitle}</p>
-      <p><i><b>{company}</b> - {location}</i></p>
-      <p>{dates}</p>
-      <p>{degree}</p>
-      {
-        (description !== undefined) ? (
-          <DescriptionDiv desc={description}/>
-        ) : null
-      }
-    </div>
-
+    <Fragment>
+      <div className={type === 'school' ? 'educationItem' : 'jobItem'} >
+        <h3><b>{roleTitle}</b></h3>
+        <p><i><b>{company}</b> - {location}</i></p>
+        <p>{dates}</p>
+        <p>{degree}</p>
+        {
+          (description !== undefined) ? (
+            <DescriptionDiv desc={description}/>
+          ) : null
+        }
+        <div className='dot'/>
+      </div>
+    </Fragment>
   )
 }
 
