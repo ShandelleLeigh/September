@@ -12,16 +12,20 @@ const styles = {
     top: '0',
     left: '0',
     display: 'grid',
-    grid: 'auto',
-    gridAutoRows: 'max-content',
+    gridAutoFlow: 'row',
     justifyContent: 'center',
     alignContent: 'end',
-    zIndex: '10',
   },
   socIcons: {
     marginBottom: '16px',
     width: '50px',
     height: '50px',
+  },
+  socHeading: {
+    marginBottom: '16px',
+    width: '50px',
+    height: '200px',
+    order: '1',
   },
 }
 
@@ -29,21 +33,10 @@ const Socials = () => {
   return (
     <div style={styles.socials}>
       <div style={styles.socIcons}>
-        <a target="_blank" href='https://www.linkedin.com/in/shandelle-lovato-10b635102/' >
+        <a target="_blank" href='https://www.linkedin.com/in/shandelle-leigh/' >
           <LinkedIn/>
         </a>
       </div>
-      <div style={styles.socIcons}>
-        <a target="_blank" href='https://www.linkedin.com/in/shandelle-lovato-10b635102/' >
-          <LinkedIn/>
-        </a>
-      </div>
-      <div style={styles.socIcons}>
-        <a target="_blank" href='https://www.linkedin.com/in/shandelle-lovato-10b635102/' >
-          <LinkedIn/>
-        </a>
-      </div>
-
     </div>
   )
 }

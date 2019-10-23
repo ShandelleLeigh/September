@@ -22,15 +22,14 @@ const DescriptionDiv = ({desc}) => {
 const TimelineItem = ({data}) => {
   const {
     roleTitle, company, location,
-    dates, degree, description, type,
+    dates, degree, description, type, studyField
   } = data
   return (
     <Fragment>
       <div className={type === 'school' ? 'educationItem' : 'jobItem'} >
-        <h3><b>{roleTitle}</b></h3>
-        <p><i><b>{company}</b> - {location}</i></p>
-        <p>{dates}</p>
-        <p>{degree}</p>
+        <p><h3><b>{roleTitle}</b></h3> | {dates} </p>
+        <p><i><b>{company}</b></i> | <i>{location}</i></p>
+        { degree && studyField ? <p><b>{degree}</b> | {studyField}</p> : null }
         {
           (description !== undefined) ? (
             <DescriptionDiv desc={description}/>

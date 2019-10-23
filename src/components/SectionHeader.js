@@ -20,6 +20,12 @@ const styles = {
   green: {
     backgroundColor: '#82c03e',
   },
+  warmColors: {
+    background: 'linear-gradient(135deg, #c45e57 19%, #b472b8 100%)',
+  },
+  coolColors: {
+    background: 'linear-gradient(135deg, #7adeae 19%, #50bce4 37%, #8c5dba 100%)',
+  }
 }
 
 const SectionHeader = ({headerText, color}) => {

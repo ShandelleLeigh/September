@@ -3,9 +3,8 @@ import './App.css';
 import Intro from './Pages/Intro'
 import Socials from './Pages/socials'
 import Skills from './Pages/Skills';
-// import Education from './Pages/Education';
 import Resume from './Pages/Resume';
-// import Contact from './Pages/Contact';
+import Contact from './Pages/Contact';
 
 const styles = {
   pageContainer: {
@@ -24,9 +23,8 @@ function App() {
       <div className="Pages" style={styles.pageContainer} >
         <Intro className="Intro"/>
         <Skills className="Skills"/>
-        {/* <Education/> */}
         <Resume/>
-        {/* <Contact/> */}
+        <Contact/>
       </div>
     </span>
   );

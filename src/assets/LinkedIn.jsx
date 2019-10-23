@@ -3,8 +3,6 @@ import React from 'react';
 
 const styles = {
   linkedIn: {
-    // height: '34px',
-    // width: '34px',
     display: 'inline-block',
     minWidth: '34px',
     minHeight: '34px'
