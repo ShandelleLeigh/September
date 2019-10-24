@@ -1,5 +1,6 @@
 import React from 'react';
 import LinkedIn from '../assets/LinkedIn';
+import GitHub from '../assets/GitHub';
 
 const styles = {
   socials: {
@@ -33,7 +34,10 @@ const Socials = () => {
   return (
     <div style={styles.socials}>
       <div style={styles.socIcons}>
-        <a target="_blank" href='https://www.linkedin.com/in/shandelle-leigh/' >
+        <GitHub/>
+      </div>
+      <div style={styles.socIcons}>
+        <a href='https://www.linkedin.com/in/shandelle-leigh/' >
           <LinkedIn/>
         </a>
       </div>

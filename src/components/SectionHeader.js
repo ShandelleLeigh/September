@@ -21,10 +21,13 @@ const styles = {
     backgroundColor: '#82c03e',
   },
   warmColors: {
-    background: 'linear-gradient(135deg, #c45e57 19%, #b472b8 100%)',
+    background: 'linear-gradient(135deg, #ed7466 19%, #ce6ad5 100%)',
   },
   coolColors: {
     background: 'linear-gradient(135deg, #7adeae 19%, #50bce4 37%, #8c5dba 100%)',
+  },
+  orangeColors: {
+    background: 'linear-gradient(135deg, #e77163 15%, #ffa754 85%)',
   }
 }
 

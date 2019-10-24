@@ -1,31 +1,40 @@
 import React from 'react';
 import '../components/item.css';
 import SectionHeader from '../components/SectionHeader';
+import '../App.css';
+import EmailIcon from '../assets/emailIcon';
 
 const styles = {
   section: {
-    height: '100vh',
+    height: 'max-content',
     border: 'solid 10px #fe6b60',
-    color: '',
   },
   inner: {
-    // backgroundColor: 'white',
-    // color: 'black',
     padding: '1em',
     margin: '1em',
     height: '100%',
-  }
+    lineHeight: '2.5em',
+    color: 'white',
+  },
 }
+
 
 const Contact = () => {
   return (
     <div style={styles.section} >
-      <SectionHeader headerText={'Contact'} color={'coolColors'} />
-      < div style={styles.inner}>
+      <SectionHeader headerText={'Contact'} color={'orangeColors'} />
+      <div style={styles.inner}>
+      {/* <p>Here's a copy of <a href='public/Shandelle_Jensen_Resume.pdf' download="Shandelle_Jensen_Resume.pdf" >my resume</a></p> */}
         <p>
           I'm currently looking for a Jr Web Developer or QA position in Lehi or Salt Lake areas.
-          If you have any leads or feedback you can
-          <a href='mailto:shandellejensen90@gmail.com'> send me an email. </a>
+        </p>
+        <p>
+          If you have any feedback you can <span className='link'>
+            <a href='mailto:shandellejensen90@gmail.com'>
+              send me an email. &nbsp;
+              <EmailIcon/>
+            </a>
+          </span>
         </p>
       </div>
     </div>

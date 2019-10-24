@@ -1,0 +1,12 @@
+.socs:hover {
+    transform: scale(1.2);
+  }
+
+.emailIcon {
+  width: 1.33em;
+}
+
+.emailIcon:hover {
+  color: #a1e2f5;
+  fill: #a1e2f5;
+}

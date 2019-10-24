@@ -9,7 +9,7 @@ import '../components/item.css';
 const Resume = () => {
   return (
     <Fragment>
-      <SectionHeader headerText={'Recent Work History'} color={'warmColors'} />
+      <SectionHeader headerText={'Recent Work History'} color={'pink'} />
       <div className='tContainer'>
         <div className='lineThing' />
           {

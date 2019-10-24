@@ -1,45 +1,35 @@
-.jobItem, .educationItem {
-  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.3), 0px 4px 5px 0px rgba(0,0,0,0.2), 0px 1px 10px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
+/* Timeline Container  */
+.tContainer {
+  margin-top: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
   position: relative;
-  width: 40%;
-  max-width: max-content;
-  text-align: right;
-  margin: 3px 3em;
-  padding: .5em 1em;
-  /* background: #383c3f;
-  color: white; */
+  background: #383c3f;
+  /* background: linear-gradient(0deg,rgb(56, 60, 63) 0, rgb(243, 196, 173) 5px, rgb(223, 160, 208) 100%); */
   color: #383c3f;
-  background-color: white;
+  /* background: white; */
 }
 
-.educationItem {
-  margin: 1em 2em 1em calc(50% + 3em);
-  border-left: #ddbe60 solid 5px;
-  text-align: left;
-}
-
-.educationItem::before, .jobItem::after {
+.lineThing {
+  background-color: #e17b77;
+  box-shadow: 2px 0px 4px -1px rgba(0,0,0,0.3), 4px 0px 5px 0px rgba(0,0,0,0.2), 1px 0px 10px 0px rgba(0,0,0,0.2);
   content: '';
   position: absolute;
-  top: calc(50% - 20px);
-  border-top: transparent solid 20px;
-  border-bottom: transparent solid 20px;
+  margin-left: calc(50% - 1.5px);
+  width: 4px;
+  top: 0;
+  bottom: 0;
 }
 
-.educationItem::before {
-  border-right: #ddbe60 solid 15px; /* whatever color parent is */
-  left: -15px;
+.headline {
+  display: inline-block;
+  margin: .25em 0;
+  font-size: 1.1em;
 }
 
-.jobItem {
-  margin: 1em calc(50% + 3em) 1em auto;
-  border-right: #dd60db solid 5px;
-}
-
-.jobItem::after{
-  border-left: #dd60db solid 15px; /* whatever color parent is */
-  right: -15px;
+a, a:hover, a:visited {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 .dot {
@@ -63,37 +53,47 @@
   background-color: #ddbe60;
 }
 
-.tContainer {
-  margin-top: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+.jobItem, .educationItem {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.3), 0px 4px 5px 0px rgba(0,0,0,0.2), 0px 1px 10px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
   position: relative;
-  /* width: calc(100% - 75px); */
-  background: #383c3f;
-  background: linear-gradient(0deg,#383c3f 0, #d39c98 5px, #d3b4b2 100%)
-  /* background-color: rgba(255,255,255,.9) */
-  /* background-color: white;
-  color: black; */
+  width: 40%;
+  max-width: max-content;
+  text-align: right;
+  margin: 3px 3em;
+  padding: .5em 1em;
+  /* color: white;  */
+  color: #383c3f;
+  /* background-color: white; */
 }
 
-.lineThing {
-  background-color: #e17b77;
-  box-shadow: 2px 0px 4px -1px rgba(0,0,0,0.3), 4px 0px 5px 0px rgba(0,0,0,0.2), 1px 0px 10px 0px rgba(0,0,0,0.2);
+.educationItem {
+  margin: 1em 2em 1em calc(50% + 3em);
+  border-left: #ddbe60 solid 5px;
+  text-align: left;
+  background-color: #dfd0a5;
+}
+
+.educationItem::before, .jobItem::after {
   content: '';
   position: absolute;
-  margin-left: calc(50% - 1.5px);
-  width: 4px;
-  top: 0;
-  bottom: 0;
+  top: calc(50% - 20px);
+  border-top: transparent solid 20px;
+  border-bottom: transparent solid 20px;
 }
 
-
-h3 {
-  display: inline-block;
-  margin: .25em 0;
+.educationItem::before {
+  border-right: #ddbe60 solid 15px; /* whatever color parent is */
+  left: -15px;
 }
 
-a, a:hover, a:visited {
-  text-decoration: inherit !important;
-  color: inherit !important;
+.jobItem {
+  margin: 1em calc(50% + 3em) 1em auto;
+  border-right: #dd60db solid 5px;
+  background-color: #dba3da;
+}
+
+.jobItem::after{
+  border-left: #dd60db solid 15px; /* whatever color parent is */
+  right: -15px;
 }

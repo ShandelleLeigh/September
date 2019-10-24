@@ -33,7 +33,7 @@ const Intro = () => {
         <div style={styles.polygon}/>
         <div style={styles.textContainer}>
           <h1>Hello,</h1>
-          <h3>I'm Shandelle Lovato</h3>
+          <h3>I'm Shandelle Jensen</h3>
           <h4>Front-End Web Developer</h4>
         </div>
       </div>
