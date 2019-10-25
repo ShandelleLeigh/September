@@ -22,7 +22,7 @@ const styles = {
 const Skills = () => {
   return (
     <Fragment>
-      <SectionHeader headerText={'Skills'} color={'pink'} />
+      <SectionHeader headerText={'Skills'} color={'pinkColors'} />
       <div style={styles.colContainer}>
       {
         list.map(

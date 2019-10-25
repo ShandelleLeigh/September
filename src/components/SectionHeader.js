@@ -28,6 +28,9 @@ const styles = {
   },
   orangeColors: {
     background: 'linear-gradient(135deg, #e77163 15%, #ffa754 85%)',
+  },
+  pinkColors: {
+    background: 'linear-gradient(135deg,  #e77163 15%, #ce6ad5 85%)',
   }
 }
 

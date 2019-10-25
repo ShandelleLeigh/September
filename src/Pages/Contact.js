@@ -7,7 +7,8 @@ import EmailIcon from '../assets/emailIcon';
 const styles = {
   section: {
     height: 'max-content',
-    border: 'solid 10px #fe6b60',
+    paddingBottom: '20%',
+    border: 'solid 5px #fe6b60',
   },
   inner: {
     padding: '1em',
@@ -22,7 +23,7 @@ const styles = {
 const Contact = () => {
   return (
     <div style={styles.section} >
-      <SectionHeader headerText={'Contact'} color={'orangeColors'} />
+      <SectionHeader headerText={'Contact'} color={'pinkColors'} />
       <div style={styles.inner}>
       {/* <p>Here's a copy of <a href='public/Shandelle_Jensen_Resume.pdf' download="Shandelle_Jensen_Resume.pdf" >my resume</a></p> */}
         <p>
